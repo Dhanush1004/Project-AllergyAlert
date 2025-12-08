@@ -1,181 +1,221 @@
 # ALLERGYALERT: Intelligent Food Allergy Detection using AI and Ingredient Analysis
 
 ## Project Overview
-**ALLERGYALERT** is an AI-powered web application designed to help users detect potential allergens in packaged food items by analyzing their ingredient labels.  
-By uploading an image of the food’s ingredient list, the system uses **Artificial Intelligence (AI)** and **Natural Language Processing (NLP)** to detect whether any ingredient could trigger an allergic reaction for a particular user.  
+ALLERGYALERT is an AI-powered web application designed to help users detect potential allergens in packaged food items by analyzing their ingredient labels.  
+By uploading an image of the food’s ingredient list, the system uses Artificial Intelligence (AI) and Natural Language Processing (NLP) to detect whether any ingredient could trigger an allergic reaction for a particular user.
 
-This system is especially useful for people suffering from food allergies such as **nut allergy**, **lactose intolerance**, **gluten sensitivity**, and **shellfish allergy**.
+This system is especially useful for individuals suffering from food allergies such as nut allergy, lactose intolerance, gluten sensitivity, and shellfish allergy.
 
 ---
 
 ## Problem Definition
-Food allergies are a serious global health concern — even small traces of allergens can lead to severe reactions or life-threatening anaphylaxis.  
-Many packaged food items list ingredients in small or unclear text, and users might not recognize all chemical or alternative names of allergens (e.g., *casein = milk protein*, *albumin = egg-based compound*).
+Food allergies are a serious global health concern. Even small traces of allergens can lead to severe reactions or life-threatening anaphylaxis.  
+Many packaged food items display ingredients in small or unclear text, and users might not recognize all chemical or alternative names of allergens (for example, casein means milk protein, albumin is egg-based).
 
-### Thus, people with allergies face major difficulties:
-- Manually reading every food label  
-- Not identifying hidden or alternative allergen names  
-- Lack of personalized digital tools for allergy checking  
+People with allergies face major challenges:
+- Manually reading and understanding every food label  
+- Difficulty recognizing hidden or alternative allergen names  
+- Lack of personalized digital tools for allergen detection  
 
 ---
 
-## Existing Methods & Their Issues
+## Existing Methods and Limitations
 
-| **Existing Solution** | **Description** | **Limitations** |
-|------------------------|----------------|-----------------|
-| Manual label reading | Users read ingredients manually | Time-consuming, error-prone |
-| Generic food scanner apps | OCR or barcode scanning for nutrition | Do not focus on allergens or personalization |
-| Allergy databases | Contain lists of allergens | Not integrated with real-time image detection |
-| Ingredient translators | Translate food labels | Don’t alert based on personal allergy data |
+| Existing Solution | Description | Limitations |
+|-------------------|-------------|-------------|
+| Manual label reading | Users rely on reading text themselves | Error-prone, time-consuming |
+| Generic food scanner apps | Scan for calories or nutrients | Do not detect allergens |
+| Allergy databases | Lists common allergens | Not linked to personal data or real-time scanning |
+| Ingredient translators | Translates text | Does not identify allergy risks |
 
-Hence, an **AI-based system** is needed that can understand ingredients intelligently and alert users based on their personal allergy profile.
+A personalized, AI-driven allergen analyzer is therefore necessary.
 
 ---
 
 ## Proposed Methodology
 
-1. **User Login / Registration**  
-   Users create an account and set up their allergy profile (e.g., peanuts, dairy, gluten).
+1. **User Login and Allergy Setup**  
+   Users create an account and select allergens such as peanuts, gluten, dairy, or eggs.
 
 2. **Ingredient Image Upload**  
-   Users upload an image of a food package ingredient label.
+   Users upload a picture of a food package ingredient label.
 
-3. **AI & OCR Processing**  
-   The system extracts text from the image using Optical Character Recognition (OCR).
+3. **OCR Extraction**  
+   The system extracts the text from the uploaded image using Optical Character Recognition (OCR).
 
-4. **Ingredient Analysis**  
-   The extracted ingredients are analyzed using AI/NLP models to identify allergens, including hidden or related chemical names.
+4. **AI and NLP Based Ingredient Analysis**  
+   Extracted ingredients are analyzed using AI/NLP models to identify allergens, including hidden or alternative names.
 
 5. **Alert Generation**  
-   If any allergen matches the user’s allergy profile, an alert is displayed notifying potential risk.
+   If allergens match the user’s allergy profile, an alert is generated indicating potential risk.
 
-6. **Dashboard & Reports**  
-   Displays safe/unsafe food items history for the user.
+6. **Dashboard and History**  
+   Users can view previous scans, meal logs, and smart recommendations.
 
 ---
 
 ## Tech Stack Used
 
 ### Frontend
-- HTML5, CSS3, JavaScript  
-- React.js / Express.js for interactive UI  
-- Bootstrap / TailwindCSS for responsive design  
+- React.js  
+- TailwindCSS  
+- JavaScript  
+- Framer Motion  
+- Custom Orb hover animation  
+- Spotlight Card hover effects  
 
 ### Backend
-- Python (Flask / FastAPI) or Node.js (Express) for server logic  
-- AI/ML Model for ingredient classification and allergy detection  
+- Python (FastAPI) or Node.js  
+- JWT Authentication  
+- REST API  
 
-### AI/ML & NLP Tools
-- **Tesseract OCR** – for text extraction from food images  
-- **spaCy / NLTK / Transformers (BERT)** – for ingredient name understanding and allergen matching  
-- **Custom trained model** for allergen classification  
+### AI/ML Tools
+- Tesseract OCR  
+- spaCy, NLTK, or Transformer models  
+- Custom allergen classification  
 
 ### Database
-- **MongoDB** – for storing user profiles, allergy preferences, and history  
+- MongoDB Atlas  
 
 ### Deployment
-- **Render / Vercel / AWS / Heroku** (for frontend & backend)  
-- **MongoDB Atlas** (for cloud database)
+- Vercel
+- - MongoDB Atlas  
 
 ---
+## Note : The Project file is not uploaded here beacaues it is under development for adding some advanced features
 
 ## System Architecture
+
 ```
-[ User ] 
-   ↓
-[ Upload Ingredient Image ]
-   ↓
-[ OCR Text Extraction (Tesseract) ]
-   ↓
-[ AI/NLP Allergen Detection Model ]
-   ↓
-[ Database Lookup - User Allergens ]
-   ↓
-[ Generate Alert / Safe Confirmation ]
-   ↓
-[ Display Results on Dashboard ]
+[ User ]  
+   ↓  
+[ Upload Ingredient Image ]  
+   ↓  
+[ OCR Text Extraction (Tesseract) ]  
+   ↓  
+[ AI/NLP Allergen Detection ]  
+   ↓  
+[ Compare With User Allergy Profile ]  
+   ↓  
+[ Generate Safe / Unsafe Alert ]  
+   ↓  
+[ Dashboard and History ]  
 ```
 
 ---
+## Screenshot of the Web
+
+<img width="1901" height="928" alt="Screenshot 2025-12-08 152352" src="https://github.com/user-attachments/assets/5ff1f881-0fe0-4503-be82-cd2e320fd31f" />
+
+<img width="1919" height="938" alt="Screenshot 2025-12-08 152402" src="https://github.com/user-attachments/assets/fa6538a2-f92d-4bf7-9232-4cc9de9d977e" />
+
+<img width="1919" height="932" alt="Screenshot 2025-12-08 151843" src="https://github.com/user-attachments/assets/fa00b70f-86b6-4a36-b365-17f7b2f5b1a6" />
+
+<img width="1919" height="934" alt="Screenshot 2025-12-08 151855" src="https://github.com/user-attachments/assets/e12fcf5e-d30e-4ed2-a98e-9bea02683b31" />
+
+<img width="1919" height="932" alt="Screenshot 2025-12-08 151908" src="https://github.com/user-attachments/assets/7d4ca924-9a8c-4109-9f3c-0018221a08ed" />
+
+<img width="1919" height="930" alt="Screenshot 2025-12-08 151919" src="https://github.com/user-attachments/assets/7275153f-2d2b-492a-9fc1-481c0fea83f4" />
+
+<img width="1918" height="927" alt="Screenshot 2025-12-08 151952" src="https://github.com/user-attachments/assets/25ea9d23-7c7d-4c66-a62d-d91b5de33c67" />
+
+<img width="1872" height="931" alt="Screenshot 2025-12-08 151927" src="https://github.com/user-attachments/assets/052cbc1f-4f6f-4c1d-96e2-f2a124ff24a9" />
+
+<img width="1919" height="930" alt="Screenshot 2025-12-08 151937" src="https://github.com/user-attachments/assets/4a367eca-45d3-46e9-9146-6a1e53779ce2" />
+
+<img width="1918" height="934" alt="Screenshot 2025-12-08 151945" src="https://github.com/user-attachments/assets/8096d56f-578e-4346-8059-0771e5aff8cc" />
+
+
 
 ## Project Structure
+
 ```
 ALLERGYALERT/
+│
 ├── backend/
-│   ├── app.py
-│   ├── model/
-│   │   ├── allergen_model.pkl
-│   ├── routes/
-│   │   ├── user.js
-│   │   ├── detection.js
-│   ├── database/
-│       ├── mongo_connection.py
+│   ├── server.py
+│   ├── requirements.txt
+│   ├── .env
+│   ├── __pycache__/
+│   └── venv/
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
 │   ├── public/
-│       ├── img/
-│       ├── index.html
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── robots.txt
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── bgMotion.json
+│   │   │   ├── logo.png
+│   │   │
+│   │   ├── components/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── ScanProduct.jsx
+│   │   │   ├── MealLogger.jsx
+│   │   │   ├── SmartRecommendations.jsx
+│   │   │   ├── History.jsx
+│   │   │   ├── LandingPage.jsx
+│   │   │   ├── PillNav.jsx
+│   │   │   ├── Orb.jsx
+│   │   │   ├── Orb.css
+│   │   │   ├── SpotlightCard.jsx
+│   │   │   ├── SpotlightCard.css
+│   │   │
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   ├── index.js
+│   │   ├── index.css
+│   │   └── hooks/
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── jsconfig.json
+│   ├── craco.config.js
+│   ├── postcss.config.js
+│   └── tailwind.config.js
 │
 ├── README.md
-└── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## How It Works
+## How to Run
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/Dhanush1004/ALLERGYALERT.git
-cd ALLERGYALERT
+### Frontend
 ```
-
-**2. Install dependencies**
-```bash
-npm install           # For frontend
-pip install -r requirements.txt   # For backend
-```
-
-**3. Start backend**
-```bash
-python app.py
-```
-
-**4. Start frontend**
-```bash
+cd frontend
+npm install
 npm start
 ```
 
-**5. Visit**
- [http://127.0.0.1:3000](http://127.0.0.1:3000)
+### Backend
+```
+cd backend
+pip install -r requirements.txt
+python server.py
+```
 
----
-
-## Expected Impact
-
-- Reduces the risk of accidental allergen consumption  
-- Saves time and ensures confidence in food choices  
-- Provides accessibility for visually challenged users *(future goal: voice alerts)*  
-- Encourages safer and smarter food consumption habits  
+Visit:
+```
+http://localhost:3000
+```
 
 ---
 
 ## Future Enhancements
 
-- Barcode-based allergen scanning  
-- Multi-language label recognition  
-- Mobile app integration  
-- Real-time cloud allergy database updates  
-- AI chatbot for dietary suggestions  
+- Barcode scanning  
+- Mobile application  
+- Multi-language label support  
+- Voice-based alerts  
+- Dietary recommendation engine  
 
 ---
 
 ## Developed By
-
-**Dhanush A**  
-*Final Year Student | Full Stack & AI Enthusiast*  
-*Chennai, India*
+Dhanush A  
+Full Stack Developer and AI Enthusiast  
+Chennai, India  
