@@ -82,7 +82,6 @@ A personalized, AI-driven allergen analyzer is therefore necessary.
 - - MongoDB Atlas  
 
 ---
-## Note : The Project file is not uploaded here beacaues it is under development for adding some advanced features
 
 ## System Architecture
 
@@ -224,3 +223,4 @@ http://localhost:3000
 Dhanush A  
 Full Stack Developer and AI Enthusiast  
 Chennai, India  
+
