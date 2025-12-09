@@ -1,4 +1,4 @@
-# Intelligent Food Allergy Detection using AI and Analysis (ALLERGYALERT)
+## Intelligent Food Allergy Detection using AI and Analysis (ALLERGYALERT)
 
 ## Project Overview
 ALLERGYALERT is an AI-powered web application designed to help users detect potential allergens in packaged food items by analyzing their ingredient labels.  
@@ -104,9 +104,9 @@ A personalized, AI-driven allergen analyzer is therefore necessary.
 ---
 ## Screenshot of the Web
 
-<img width="1901" height="928" alt="Screenshot 2025-12-08 152352" src="https://github.com/user-attachments/assets/5ff1f881-0fe0-4503-be82-cd2e320fd31f" />
+<img width="1919" height="937" alt="Screenshot 2025-12-09 114208" src="https://github.com/user-attachments/assets/7c362311-3278-45f0-9292-8d40d2a9a05d" />
 
-<img width="1919" height="938" alt="Screenshot 2025-12-08 152402" src="https://github.com/user-attachments/assets/fa6538a2-f92d-4bf7-9232-4cc9de9d977e" />
+<img width="1919" height="946" alt="Screenshot 2025-12-09 114218" src="https://github.com/user-attachments/assets/e1234659-c77c-46b9-9609-812e2d42543f" />
 
 <img width="1919" height="932" alt="Screenshot 2025-12-08 151843" src="https://github.com/user-attachments/assets/fa00b70f-86b6-4a36-b365-17f7b2f5b1a6" />
 
@@ -223,4 +223,5 @@ http://localhost:3000
 Dhanush A  
 Full Stack Developer and AI Enthusiast  
 Chennai, India  
+
 
