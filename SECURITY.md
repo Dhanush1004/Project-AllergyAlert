@@ -4,10 +4,12 @@ AllergyAlert – Security Guidelines
 ## 1. Supported Versions
 The following versions of AllergyAlert currently receive security updates:
 
+## Current version :v1.0.0
+
 | Version | Supported |
 |--------|-----------|
 | main (active development) | Yes |
-| v1.x | Limited fixes |
+| v1.0.0 | Limited fixes |
 | Older versions | No |
 
 ---
