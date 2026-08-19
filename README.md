@@ -220,7 +220,7 @@ http://localhost:3000
 ---
 
 ## Developed By
-Dhanush A  
+Dhanush A B.Tech(IT)
 Full Stack Developer and AI Enthusiast  
 Chennai, India  
 
